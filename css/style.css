@@ -1,0 +1,180 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+    max-width: 500px;
+    /*text-transform: uppercase;
+    text-decoration: dashed;*/
+}
+
+h1 strong{
+    color: #026fff;
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.menu { /* .menu hereda de .header */
+    height: inherit;
+}
+
+.header{
+    background-color: #1b2127;
+    color: white;
+    display: flex;  /* Alineacion de forma horizontal  */
+    justify-content: space-between;
+    height: 70px; /* <---- solo agregamos esta linea */
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li { /* .header ol li hereda de .header ol */
+    height: inherit;
+}
+
+
+.header a{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px; /* <---- solo agregamos esta linea */
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+.hero{
+    height: 300px;
+    background-image: url(../images/hero.png);
+    background-color: #1b2127;
+    background-size: 300px 320px;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+}
+
+.portfolio{
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.logo img{
+    width: 300px;
+}
+
+.project{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-details{
+    width: 50%;
+}
+
+.project-technology,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+.project-imageWrapper{
+    max-width: 100%;
+}
+
+.flexbox{
+    display: flex;
+    flex: wrap;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    flex-shrink: 0;
+}
+
+.container {
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img{
+    vertical-align: middle;
+}
+
+footer a{
+    color:white;
+}
+
