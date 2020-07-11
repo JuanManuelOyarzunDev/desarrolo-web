@@ -81,12 +81,16 @@ figure {
 
 .hero{
     height: 300px;
-    background-image: url(../images/hero.png);
     background-color: #1b2127;
-    background-size: 300px 320px;
-    background-repeat: no-repeat;
-    background-position: right;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-image{
+    object-fit: cover;
+    width: 260px;
+    height: 300px;
 }
 
 .portfolio{
@@ -125,6 +129,12 @@ figure {
     width: 50%;
 }
 
+.project-image{
+    object-fit: cover;
+    width: 290px;
+    height: 290px;
+}
+
 .project-technology,
 .project-date,
 .project-url{
@@ -136,7 +146,7 @@ figure {
 }
 
 .project-imageWrapper{
-    max-width: 100%;
+    max-width: 100%; 
 }
 
 .flexbox{
@@ -160,6 +170,116 @@ figure {
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+.experience h2{
+    margin-left: 20px;
+}
+
+.events-experience{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event{
+    border-radius: 10px;
+    margin: 10px;
+    width: 480px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #f4fbff;
+}
+
+.event-details{
+    margin: 20px 40px;
+    margin-top: -50px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description{
+    color: gray;
+    text-align: left;
+}
+
+.event-imageWrapper img{
+    width: 480px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.event-url{
+    color:  #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;;
+}
+
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.github{
+    background-image: url('../images/github.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+    background-size: 50px 50px;
+}
+
+.contact-question{
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.form-email input{
+    border-color: gray;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.form-email button{
+    display: block;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px 0;
+    margin-top: 10px;
 }
 
 footer{
