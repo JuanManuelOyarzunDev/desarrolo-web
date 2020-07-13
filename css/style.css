@@ -174,6 +174,7 @@ figure {
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+    padding: 0 .5em;
 }
 
 .experience h2{
@@ -312,12 +313,33 @@ figure {
     color:white;
 }
 
+.video{
+    width: 100%;
+    height: 0;
+    /* max-width: 100%; */
+}
+
+.youtube-video{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flexible-video{
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background-color: blue;
+    position: relative;
+}
+
 /* Breakpoints desktop first */
 
 @media screen and (max-width: 1024px){
-    .container {
-        padding: 0 .5em;
-    }
     .hero{
         height: auto;
         position: relative;
