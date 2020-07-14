@@ -407,6 +407,22 @@ figure {
 }
 
 @media screen and (max-width: 767px){
+    .menu{
+        background:rgba(5, 111, 255, .9);
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .2s;
+    }
+    .burger-button{
+        display: block;
+    }
     .header{
         display: block;
         height: auto;
@@ -428,19 +444,6 @@ figure {
     }
     .header .logo{
         text-align: center;
-    }
-    .menu{
-        background:rgba(5, 111, 255, .9);
-        position: fixed;
-        z-index: 3;
-        top: 0;
-        left: -100vw;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: .2s;
     }
     .menu.is-active{
         left: 0;
@@ -523,9 +526,6 @@ figure {
         display: block;
         text-align: center;
         border: 1px solid transparent;
-    }
-    .burger-button{
-        display: block;
     }
 }
 

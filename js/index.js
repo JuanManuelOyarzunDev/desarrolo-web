@@ -1,8 +1,17 @@
-console.log('Hello world')
-
+const mediaQueryIpad = window.matchMedia('screen and (max-width: 767px)');
 const burgerButton = document.querySelector('#burgerButton')
 const menu = document.querySelector('.menu')
 const menuItem = document.querySelectorAll('li');
+
+const validationMediaQuery = event =>{
+    if(event.matches){
+        burgerButton.addEventListener('click', hideShow)
+        menuItem.forEach(item => item.addEventListener('click', hideShow))         
+    }else{
+        burgerButton.removeEventListener('click', hideShow)
+        menuItem.forEach(item => item.removeEventListener('click', hideShow))
+    }
+}
 
 const hideShow = () =>{
     if(menu.classList.contains('is-active')){
@@ -12,12 +21,7 @@ const hideShow = () =>{
     }
 }
 
-burgerButton.addEventListener('click', () =>{
-    hideShow()
-})
+mediaQueryIpad.addListener(validationMediaQuery)
 
-menuItem.forEach(x => x.addEventListener('click', ()=>{
-    hideShow ()   
-}))
 
 
