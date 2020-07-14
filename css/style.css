@@ -83,7 +83,7 @@ h2{
 
 .header ol {
     display: flex;
-    height: inherit;
+    height: auto;
 }
 
 .header ol li { /* .header ol li hereda de .header ol */
@@ -377,7 +377,7 @@ figure {
     line-height: 40px;
     text-align: center;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     left: 5px;
     top: 5px;
     color:white;
@@ -422,9 +422,28 @@ figure {
     }
     .header a{
         justify-content: center;
+        height: 30px;
+        font-size: 1.5em;
+        margin-bottom: .5em;
     }
     .header .logo{
         text-align: center;
+    }
+    .menu{
+        background:rgba(5, 111, 255, .9);
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .2s;
+    }
+    .menu.is-active{
+        left: 0;
     }
     .project{
         display: block;
