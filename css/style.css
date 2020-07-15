@@ -404,6 +404,9 @@ figure {
         font-size: 2em;
         z-index: 2;
     }
+    .portfolio{
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 767px){

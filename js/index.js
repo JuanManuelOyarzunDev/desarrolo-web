@@ -3,7 +3,15 @@ const burgerButton = document.querySelector('#burgerButton')
 const menu = document.querySelector('.menu')
 const menuItem = document.querySelectorAll('li');
 
-const validationMediaQuery = event =>{
+function hideShow(){
+    if(menu.classList.contains('is-active')){
+        menu.classList.remove('is-active')
+    }else{
+        menu.classList.add('is-active')
+    }
+}
+
+function validationMediaQuery(event){
     if(event.matches){
         burgerButton.addEventListener('click', hideShow)
         menuItem.forEach(item => item.addEventListener('click', hideShow))         
@@ -13,15 +21,8 @@ const validationMediaQuery = event =>{
     }
 }
 
-const hideShow = () =>{
-    if(menu.classList.contains('is-active')){
-        menu.classList.remove('is-active')
-    }else{
-        menu.classList.add('is-active')
-    }
-}
-
 mediaQueryIpad.addListener(validationMediaQuery)
+validationMediaQuery(mediaQueryIpad)
 
 
 
